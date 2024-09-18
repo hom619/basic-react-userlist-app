@@ -1,9 +1,12 @@
 import "./App.css";
+import UserForm from "./Component/UserForm";
+import UserTable from "./Component/UserTable";
 
 function App() {
   return (
     <div>
-      <button className="btn btn-primary">Click Me</button>Hello World
+      <UserForm />
+      <UserTable />
     </div>
   );
 }
