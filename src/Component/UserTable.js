@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function UserTable() {
+export const UserTable = ({ userlist }) => {
   return (
     <div className="mt-5 shadow-lg p-2 rounded">
       <table className="table table-striped">
@@ -13,26 +13,19 @@ export default function UserTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
+          {" "}
+          {userlist.map((user, i) => {
+            return (
+              <tr key={i}>
+                <th scope="row">{i + 1}</th>
+                <td></td>
+                <td>{user.name}</td>
+                <td>{user.gender}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   );
-}
+};

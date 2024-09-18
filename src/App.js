@@ -1,12 +1,17 @@
+import { useState } from "react";
 import "./App.css";
-import UserForm from "./Component/UserForm";
-import UserTable from "./Component/UserTable";
+import { UserForm } from "./Component/UserForm";
+import { UserTable } from "./Component/UserTable";
 
 function App() {
+  const [userlist, setUserlist] = useState([]);
+  const addUser = (userObj) => {
+    setUserlist([...userlist, userObj]);
+  };
   return (
     <div>
-      <UserForm />
-      <UserTable />
+      <UserForm addUser={addUser} />
+      <UserTable userlist={userlist} />
     </div>
   );
 }
