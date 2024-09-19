@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/basic-react-userlist-app/static/css/main.31d6cfe0.css",
+    "main.js": "/basic-react-userlist-app/static/js/main.70c1c22a.js",
+    "static/js/453.b9a87515.chunk.js": "/basic-react-userlist-app/static/js/453.b9a87515.chunk.js",
+    "static/media/woman.png": "/basic-react-userlist-app/static/media/woman.3f889d0af5f26871fbcc.png",
+    "static/media/gamer.png": "/basic-react-userlist-app/static/media/gamer.3c37a790f9676542b372.png",
+    "index.html": "/basic-react-userlist-app/index.html",
+    "main.70c1c22a.js.map": "/basic-react-userlist-app/static/js/main.70c1c22a.js.map",
+    "453.b9a87515.chunk.js.map": "/basic-react-userlist-app/static/js/453.b9a87515.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.70c1c22a.js"
+  ]
+}
